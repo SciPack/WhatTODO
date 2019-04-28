@@ -16,7 +16,9 @@
 - [ ] best/worst day score, stats
 - [ ] choose topics for items
 
-### v2
+---
+
+#### v2
 
 - [ ] ML recommends what could you do that is related to what have you done recently
 
