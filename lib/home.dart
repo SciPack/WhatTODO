@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+List<String> listContent = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine", " ten", "eleven", "twelve", "thirteen"];
+
 class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -22,6 +24,15 @@ class Home extends StatelessWidget {
           child: Icon(Icons.add),
           onPressed: () { print("Add"); }
       ),
+      body: ListView.builder(
+        itemCount: listContent.length,
+        itemBuilder: (BuildContext context, int index) {
+          return ListTile(
+            leading: Checkbox(value: false, onChanged: null),
+            title: Text(listContent[index]),
+          );
+        }
+      )
     );
   }
 }
