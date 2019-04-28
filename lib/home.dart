@@ -3,6 +3,21 @@ import 'package:flutter/material.dart';
 class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("What TODO?"),
+        centerTitle: true,
+        leading: IconButton(
+            icon: Icon(Icons.settings),
+            onPressed: () { print("settings"); }
+        ),
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(Icons.search),
+            onPressed: () { print("search..."); },
+          )
+        ],
+      ),
+    );
   }
 }
